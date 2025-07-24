@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --procogia-green: #a6ce39;
+  --procogia-blue: #00b2e3;
+  --procogia-dark: #2d2e2c;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--procogia-dark);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, rgba(166, 206, 57, 0.2), rgba(0, 178, 227, 0.2));
+}
+
+.btn-primary {
+  @apply bg-[#a6ce39] hover:bg-[#95b933] text-white font-bold py-3 px-6 rounded-md transition duration-300;
+}
+
+.btn-secondary {
+  @apply bg-[#00b2e3] hover:bg-[#00a0cc] text-white font-bold py-3 px-6 rounded-md transition duration-300;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+}
